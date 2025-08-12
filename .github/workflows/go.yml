@@ -39,12 +39,10 @@ jobs:
     level: # optional, default is error
     # Reporter of reviewdog command [github-pr-check,github-pr-review,github-check].
     reporter: # optional, default is github-pr-check
-    # Filtering for the reviewdog command [added,diff_context,file,nofilter].
-Default is added.
+    # Filtering for the reviewdog command [added,diff_context,file,nofilter]. Default is added.
 
     filter_mode: # optional, default is added
-    # If set to `none`, always use exit code 0 for reviewdog.
-Otherwise, exit code 1 for reviewdog if it finds at least 1 issue with severity greater than or equal to the given level.
+    # If set to `none`, always use exit code 0 for reviewdog. Otherwise, exit code 1 for reviewdog if it finds at least 1 issue with severity greater than or equal to the given level.
 Possible values: [none,any,info,warning,error]
 Default is `none`.
 
